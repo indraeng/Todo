@@ -1,5 +1,21 @@
 .App {
+  padding: 20px;
   text-align: center;
+  background: #fc00ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #00dbde,
+    #fc00ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #00dbde,
+    #fc00ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +51,96 @@
   to {
     transform: rotate(360deg);
   }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1{
+  margin-bottom: 50px;
+}
+.container {
+  display: flex;
+  gap: 1.2rem;
+  color: white;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.item{
+  background-color: #744376;
+}
+.addItems{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 2.3rem;
+  padding: 0px 8px;
+  border-radius: 28px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.addItems input{
+  height: 100%;
+  border: none;
+  width: 230px;
+  border-radius: 28px;
+  font-size: 15px;
+}
+.addItems input:focus{
+  outline: none;
+}
+.addIcon{
+  font-size: 1.7rem;
+}
+.showItems{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.eachItem{
+  height: 2rem;
+  width: 256px;
+  padding: 6px;
+  border-radius: 5px;
+  background-color: #6e1fee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.eachItem:hover{
+  color: #6e1fee;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  /* transform: scale(1.05);
+  transition: 0.4s; */
+}
+
+.eachItem h3{
+  font-weight: 400;
+}
+.itembtn{
+  display: flex;
+  gap: 5px;
+}
+.edit:hover{
+  color: green;
+}
+.trash:hover{
+  color: rgb(243, 42, 42);
+}
+.removebtn{
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(215, 54, 54);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.removebtn:hover{
+  background-color: rgb(167, 19, 19);
+  color: white;
 }
